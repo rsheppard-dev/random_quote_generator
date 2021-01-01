@@ -8,27 +8,21 @@ body {
 }
 
 .container {
-  display: flex;
   height: 100vh;
 }
 
 #quote-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  min-height: fit-content;
+  width: 100%;
 }
 
 #text {
   font-family: 'Lobster', cursive;
-font-size: 2rem;
+  font-size: 30px;
 }
 
 #author {
   font-family: 'Lobster', cursive;
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 
-.show-quote {
-  min-height: 300px;
-  width: 100%;
-}

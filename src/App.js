@@ -19,6 +19,8 @@ class App extends Component {
       author: newQuote.author
     });
 
+    window.scrollTo(0, 0);
+
   }
 
   generateQuote = () => {
@@ -48,19 +50,15 @@ componentDidMount() {
     const { quote, author } = this.state;
     
     return (
-      <div className="App container justify-content-center">
-        <div id="quote-box" className="justify-content-center align-self-center p-4 border shadow bg-light">
-          
-          <div className="row justify-content-center">
-              <h1 className="display-5 text-center text-primary">Random Quote Generator</h1>
-              
-              <div className="show-quote col-6 p-5">
-                <p id="text">{quote}</p>
-                <cite id="author" className="text-right">--{author}</cite>
-              </div>
+      <div className="App container justify-content-center d-flex flex-column">
+        <div id="quote-box" className="row p-4 border shadow bg-light align-self-center">
 
+          <div className="col-12 show-quote p-5">
+            <h1 className="display-5 text-center text-primary pb-4">Random Quote Generator</h1>
+            <p id="text">{quote}</p>
+            <cite id="author">--{author}</cite>
           </div>
-
+        
           <div className="row justify-content-evenly">
             <div className="col-4 text-center">
               <button id="new-quote" className="btn btn-outline-primary btn-lg" onClick={this.handleClick}><i className="fas fa-quote-left"></i> Generate Quote</button>

@@ -1,2 +1,0 @@
-@import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);body{margin:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:#6495ed}.container{display:flex;height:100vh}#quote-box{display:flex;flex-direction:column;justify-content:center}#text{font-size:2rem}#author,#text{font-family:"Lobster",cursive}#author{font-size:1.5rem}.show-quote{min-height:300px;width:100%}
-/*# sourceMappingURL=main.349294e1.chunk.css.map */
