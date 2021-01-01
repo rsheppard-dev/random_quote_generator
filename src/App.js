@@ -53,7 +53,7 @@ componentDidMount() {
 
           <div className="row">
             <h1 className="display-4 text-center text-primary">Random Quote Generator</h1>
-            <p className="lead p-3">Welcome to the 'Random Quote Generator'. Press the button below to generate a new quote. If you like the quote feel free to share it on Twitter.</p>
+            <p className="lead p-3">Press the button below to generate a new quote. If you like the quote feel free to share it on Twitter.</p>
           </div>
 
           <div className="row buttons justify-content-evenly">
