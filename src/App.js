@@ -48,15 +48,20 @@ componentDidMount() {
     const { quote, author } = this.state;
     
     return (
-      <div className="App container">
+      <div className="App container justify-content-center">
         <div id="quote-box" className="justify-content-center align-self-center p-4 border shadow bg-light">
+          
+          <div className="row justify-content-center">
+              <h1 className="display-5 text-center text-primary">Random Quote Generator</h1>
+              
+              <div className="show-quote col-6 p-5">
+                <p id="text">{quote}</p>
+                <cite id="author" className="text-right">--{author}</cite>
+              </div>
 
-          <div className="row">
-            <h1 className="display-4 text-center text-primary">Random Quote Generator</h1>
-            <p className="lead p-3">Press the button below to generate a new quote. If you like the quote feel free to share it on Twitter.</p>
           </div>
 
-          <div className="row buttons justify-content-evenly">
+          <div className="row justify-content-evenly">
             <div className="col-4 text-center">
               <button id="new-quote" className="btn btn-outline-primary btn-lg" onClick={this.handleClick}><i className="fas fa-quote-left"></i> Generate Quote</button>
             </div>
@@ -64,15 +69,6 @@ componentDidMount() {
               <a href={`http://www.twitter.com/intent/tweet?text=${quote} --${author}`} target="_blank" rel="noreferrer" id="tweet-quote" className="btn btn-outline-primary btn-lg"><i className="fab fa-twitter-square"></i> Tweet Quote</a>
             </div>
           </div>
-
-          <figure className="p-4 text-center">
-            <blockquote className="blockquote">
-              <p id="text">{quote}</p>
-            </blockquote>
-            <figcaption className="blockquote-footer">
-            <cite id="author">{author}</cite>
-            </figcaption>
-          </figure>
 
         </div>
       </div>
