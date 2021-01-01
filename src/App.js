@@ -49,11 +49,13 @@ componentDidMount() {
     
     return (
       <div className="App container">
-        <div id="quote-box" className="border p-4 m-5 shadow bg-light">
+        <div id="quote-box" className="justify-content-center align-self-center p-4 border shadow bg-light">
+
           <div className="row">
             <h1 className="display-4 text-center text-primary">Random Quote Generator</h1>
             <p className="lead p-3">Welcome to the 'Random Quote Generator'. Press the button below to generate a new quote. If you like the quote feel free to share it on Twitter.</p>
           </div>
+
           <div className="row buttons justify-content-center">
             <div className="col-4 text-center">
               <button id="new-quote" className="btn btn-outline-primary btn-lg" onClick={this.handleClick}><i className="fas fa-quote-left"></i> Generate Quote</button>
@@ -62,6 +64,7 @@ componentDidMount() {
               <a href={`http://www.twitter.com/intent/tweet?text=${quote} --${author}`} target="_blank" rel="noreferrer" id="tweet-quote" className="btn btn-outline-primary btn-lg"><i className="fab fa-twitter-square"></i> Tweet Quote</a>
             </div>
           </div>
+
           <figure className="p-4 text-center">
             <blockquote className="blockquote">
               <p id="text">{quote}</p>
@@ -70,6 +73,7 @@ componentDidMount() {
             <cite id="author">{author}</cite>
             </figcaption>
           </figure>
+
         </div>
       </div>
     );
