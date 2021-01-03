@@ -1,28 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body {
-  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:cornflowerblue;
-}
-
-.container {
-  height: 100vh;
+  background-color:darkorange;
 }
 
 #quote-box {
-  min-height: fit-content;
-  width: 100%;
+  background-color: white;
+  padding: 30px 10px;
 }
 
-#text {
-  font-family: 'Lobster', cursive;
-  font-size: 30px;
+#quote-box > .fas {
+  position: absolute;
+  font-size: 60px;
 }
 
-#author {
-  font-family: 'Lobster', cursive;
-  font-size: 20px;
+#quote-box > .fa-quote-left {
+  top: -20px;
+  left: -10px;
 }
 
+#quote-box > .fa-quote-right {
+  bottom: -20px;
+  right: -10px;
+}
